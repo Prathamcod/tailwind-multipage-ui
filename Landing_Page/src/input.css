@@ -57,3 +57,17 @@
 .cta-profile-align img {
   @apply w-12 h-12 md:w-14 md:h-14 rounded-full;
 }
+
+/* Footer styles */
+.site-footer {
+  @apply w-full;
+}
+.footer-brand {
+  @apply text-lg font-semibold;
+}
+.footer-heading {
+  @apply text-base font-medium;
+}
+.footer-link {
+  @apply text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors;
+}
