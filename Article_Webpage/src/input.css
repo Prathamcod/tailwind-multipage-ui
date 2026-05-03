@@ -19,3 +19,7 @@
            transition-all duration-200;
 }
 
+/* Hero section */
+.primaryh1 {
+  @apply text-3xl sm:text-4xl md:text-[64px] font-bold text-slate-950 dark:text-white;
+}
