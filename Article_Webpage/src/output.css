@@ -11,6 +11,7 @@
     --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-600: oklch(44.6% 0.043 257.281);
+    --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-slate-800: oklch(27.9% 0.041 260.031);
     --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-slate-950: oklch(12.9% 0.042 264.695);
@@ -357,6 +358,21 @@
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: var(--color-white);
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+  &:hover {
+    @media (hover: hover) {
+      scale: 1.02;
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      opacity: 90%;
+    }
+  }
   @media (prefers-color-scheme: dark) {
     background-color: var(--color-white);
   }
@@ -368,16 +384,28 @@
   border-radius: var(--radius-md);
   background-color: var(--color-gray-200);
   color: var(--color-slate-900);
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
-  --tw-duration: 150ms;
-  transition-duration: 150ms;
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-gray-300);
+    }
+  }
   @media (prefers-color-scheme: dark) {
     background-color: var(--color-slate-800);
   }
   @media (prefers-color-scheme: dark) {
     color: var(--color-slate-100);
+  }
+  @media (prefers-color-scheme: dark) {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-700);
+      }
+    }
   }
 }
 .main-content-space {

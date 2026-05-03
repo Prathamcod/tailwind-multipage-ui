@@ -2,11 +2,11 @@
 
 /* Buttons */
 .btn {
-  @apply px-6 py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-md cursor-pointer font-semibold;
+  @apply px-6 py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-md cursor-pointer font-semibold transition duration-200 hover:opacity-90 hover:scale-[1.02];
 }
 
 .btn-muted {
-  @apply bg-gray-200 text-slate-900 dark:bg-slate-800 dark:text-slate-100 rounded-md transition-colors duration-150;
+  @apply bg-gray-200 text-slate-900 dark:bg-slate-800 dark:text-slate-100 rounded-md transition duration-200 hover:bg-gray-300 dark:hover:bg-slate-700;
 }
 /* Main spacing */
 .main-content-space {
