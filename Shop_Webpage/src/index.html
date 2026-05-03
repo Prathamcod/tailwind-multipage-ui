@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./input.css" />
+    <title>Shop Webpage</title>
+    <!-- Fa icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bg-white text-slate-900 dark:bg-black dark:text-slate-100">
+    <section
+      class="relative h-180 bg-[url('./img/mainImg.jpg')] bg-cover bg-center text-white"
+    >
+      <!-- Dark bg overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Header -->
+      <header class="shop-header">
+        <h1 class="shop-brand">Vanguard</h1>
+
+        <nav class="shop-nav">
+          <ul class="shop-nav-links">
+            <li><a href="#" class="shop-nav-link">Home</a></li>
+            <li><a href="#" class="shop-nav-link">About</a></li>
+            <li><a href="#" class="shop-nav-link">Contact</a></li>
+          </ul>
+
+          <button class="shop-button">Log In</button>
+        </nav>
+      </header>
+
+      <!-- Hero Content -->
+      <div class="shop-hero-content">
+        <h1 class="text-4xl md:text-[64px] font-bold mb-4">
+          Curated Apparel for the Modern Minimalist
+        </h1>
+
+        <p class="text-lg md:text-[24px] text-gray-200 max-w-xl mb-6">
+          Discover a handpicked selection of quality products designed to
+          simplify your life and elevate your home
+        </p>
+
+        <button class="shop-hero-button">Button</button>
+      </div>
+    </section>
+
+    <!-- shop feature section -->
+    <main>
+      <section class="shop-feature-section">
+        <div class="shop-feature-grid">
+          <div class="shop-feature-content">
+            <h2 class="shop-feature-title">Purely Natural</h2>
+            <p class="shop-feature-copy">
+              Elevate your daily rituals with a curated collection of premium
+              home essentials designed to blend form and function seamlessly.
+            </p>
+            <div class="shop-feature-actions">
+              <button class="shop-feature-button-primary">Explore</button>
+              <button class="shop-feature-button-secondary">Buy Now</button>
+            </div>
+          </div>
+          <div>
+            <img
+              class="shop-feature-image"
+              src="./img/image3.png"
+              alt="images"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- shop feature second  -->
+      <section class="shop-feature-section">
+        <div class="shop-feature-grid">
+          <div class="order-2 md:order-1">
+            <img
+              class="shop-feature-image"
+              src="./img/images4.png"
+              alt="images"
+            />
+          </div>
+          <div class="shop-feature-content order-1 md:order-2">
+            <h2 class="shop-feature-title">Purely Natural</h2>
+            <p class="shop-feature-copy">
+              Elevate your daily rituals with a curated collection of premium
+              home essentials designed to blend form and function seamlessly.
+            </p>
+            <div class="shop-feature-actions">
+              <button class="shop-feature-button-primary">Explore</button>
+              <button class="shop-feature-button-secondary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Product -->
+      <section class="px-6 py-16 md:px-20">
+        <h2 class="product-heading">Our Product</h2>
+
+        <div class="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2 items-stretch">
+          <!-- LEFT -->
+          <div class="flex h-full flex-col gap-4">
+            <img
+              src="./img/images1.png"
+              alt="Featured product"
+              class="w-full rounded-lg object-cover aspect-4/3 lg:aspect-auto lg:h-full"
+            />
+
+            <div class="space-y-1 text-lg sm:text-xl">
+              <h3 class="font-semibold">Fresh Fruit</h3>
+              <p class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto, mollitia!
+              </p>
+              <span class="font-medium">$10.99</span>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
+            <div class="flex h-full flex-col gap-3">
+              <img
+                src="./img/images4.png"
+                alt="Product"
+                class="w-full rounded-lg object-cover aspect-4/3 lg:h-[283.5px] lg:aspect-auto"
+              />
+              <div class="space-y-1 text-lg sm:text-xl">
+                <h3 class="font-semibold">Fresh Fruit</h3>
+                <p class="text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto, mollitia!
+                </p>
+                <span class="font-medium">$12.90</span>
+              </div>
+            </div>
+
+            <div class="flex h-full flex-col gap-3">
+              <img
+                src="./img/image2.jpg"
+                alt="Product"
+                class="w-full rounded-lg object-cover aspect-4/3 lg:h-[283.5px] lg:aspect-auto"
+              />
+              <div class="space-y-1 text-lg sm:text-xl">
+                <h3 class="font-semibold">Fresh Fruit</h3>
+                <p class="text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto, mollitia!
+                </p>
+                <span class="font-medium">$20.23</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-20 py-16">
+        <h2 class="text-2xl md:text-3xl font-bold mb-10">
+          Why we choose Vanguard
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20">
+          <!-- Column 1 -->
+          <div class="space-y-10 md:space-y-12">
+            <!-- Card -->
+            <div>
+              <div class="mb-3">
+                <img src="./img/🦆 icon _globe_.png" alt="" class="w-8 h-8" />
+              </div>
+              <h3 class="text-lg md:text-xl font-medium mb-2">
+                Curated Worldwide
+              </h3>
+              <p class="text-sm md:text-xl text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Temporibus sunt recusandae vitae delectus enim aspernatur eum
+                maiores explicabo.
+              </p>
+            </div>
+
+            <!-- Card -->
+            <div>
+              <div class="mb-3">
+                <img src="./img/Vector.png" alt="" class="w-8 h-8" />
+              </div>
+              <h3 class="text-lg md:text-xl font-medium mb-2">
+                Curated Worldwide
+              </h3>
+              <p class="text-sm md:text-xl text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Temporibus sunt recusandae vitae delectus enim aspernatur eum
+                maiores explicabo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="space-y-10 md:space-y-12">
+            <!-- Card -->
+            <div>
+              <div class="mb-3">
+                <img src="./img/00.png" alt="" class="w-8 h-8" />
+              </div>
+              <h3 class="text-lg md:text-xl font-medium mb-2">
+                Curated Worldwide
+              </h3>
+              <p class="text-sm md:text-xl text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Temporibus sunt recusandae vitae delectus enim aspernatur eum
+                maiores explicabo.
+              </p>
+            </div>
+
+            <!-- Card -->
+            <div>
+              <div class="mb-3">
+                <img src="./img/Frame 1321316141.png" alt="" class="w-8 h-8" />
+              </div>
+              <h3 class="text-lg md:text-xl font-medium mb-2">
+                Curated Worldwide
+              </h3>
+              <p class="text-sm md:text-xl text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Temporibus sunt recusandae vitae delectus enim aspernatur eum
+                maiores explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2 class="footer-logo">Zenova</h2>
+
+          <div class="footer-social">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube-play"></i>
+            <i class="fa fa-instagram"></i>
+          </div>
+        </div>
+
+        <!-- Column -->
+        <div class="footer-col">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Updates</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
