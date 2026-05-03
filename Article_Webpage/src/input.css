@@ -49,7 +49,7 @@
 }
 
 .related-post-card {
-  @apply space-y-3 pt-8;
+  @apply flex flex-col h-full justify-start space-y-3 p-4 rounded-lg overflow-hidden bg-white/5 dark:bg-black/5 border border-slate-200 dark:border-slate-800 transition-shadow duration-200;
 }
 
 .related-post-title {
@@ -57,5 +57,60 @@
 }
 
 .related-post-copy {
-  @apply mt-1 text-xl text-slate-600 dark:text-slate-300;
+  @apply mt-1 text-sm md:text-xl text-slate-600 dark:text-slate-300;
+}
+
+.related-post-image {
+  @apply w-full h-56 object-cover rounded-md;
+}
+
+/* Footer */
+.footer {
+  @apply px-6 md:px-20 py-12 mt-37.5 bg-white dark:bg-black text-gray-700 dark:text-gray-300 border-t border-slate-200 dark:border-slate-800;
+}
+
+/* Footer Grid */
+.footer-container {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 items-start;
+}
+
+/* Footer Brand */
+.footer-brand {
+  @apply flex  flex-col justify-between  h-full lg:min-h-30 lg:col-span-2;
+}
+
+.footer-logo {
+  @apply text-xl font-bold text-black dark:text-white;
+}
+
+/* Social Icons */
+.footer-social {
+  @apply flex gap-4 text-lg text-gray-500;
+}
+
+.footer-social i {
+  @apply cursor-pointer transition duration-300;
+}
+
+/* Icon Hover Effect */
+.footer-social i:hover {
+  @apply text-black dark:text-white scale-110;
+}
+
+/* footer Columns */
+.footer-col h3 {
+  @apply font-semibold mb-3 text-black dark:text-white;
+}
+
+.footer-col ul {
+  @apply space-y-2;
+}
+
+.footer-col a {
+  @apply text-gray-500 transition duration-300;
+}
+
+/* link Hover Effect */
+.footer-col a:hover {
+  @apply text-black dark:text-white pl-1;
 }
