@@ -8,7 +8,10 @@
 .btn-muted {
   @apply bg-gray-200 text-slate-900 dark:bg-slate-800 dark:text-slate-100 rounded-md transition-colors duration-150;
 }
-
+/* Main spacing */
+.main-content-space {
+  @apply px-6 mt-20 md:px-74.75;
+}
 /* Navbar */
 .nav {
   @apply flex justify-between items-center 
@@ -22,4 +25,12 @@
 /* Hero section */
 .primaryh1 {
   @apply text-3xl sm:text-4xl md:text-[64px] font-bold text-slate-950 dark:text-white;
+}
+
+.image-size {
+  @apply w-full h-auto aspect-square object-cover rounded-lg;
+}
+
+.hero-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
 }
