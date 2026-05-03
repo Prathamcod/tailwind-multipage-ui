@@ -60,7 +60,7 @@
 }
 
 .shop-feature-button-primary {
-  @apply w-full cursor-pointer rounded-md bg-black px-6 py-3.5 text-sm sm:text-base md:text-[24px] font-medium text-white transition hover:bg-gray-800 sm:w-auto;
+  @apply w-full cursor-pointer rounded-md bg-black dark:bg-white px-6 py-3.5 text-sm sm:text-base md:text-[24px] font-medium text-white dark:text-black transition hover:bg-gray-800 dark:hover:text-white sm:w-auto;
 }
 
 .shop-feature-button-secondary {
@@ -69,4 +69,9 @@
 
 .shop-feature-image {
   @apply w-full rounded-lg object-cover h-auto;
+}
+
+/* Our Product */
+.product-heading {
+  @apply text-3xl mt-37.5 sm:text-4xl md:text-5xl font-semibold text-center md:text-left;
 }
