@@ -213,9 +213,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-auto {
     height: auto;
   }
@@ -224,12 +221,6 @@
   }
   .max-w-211 {
     max-width: calc(var(--spacing) * 211);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .items-center {
     align-items: center;
@@ -251,13 +242,6 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-slate-300 {
-    border-color: var(--color-slate-300);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -266,9 +250,6 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
-  }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
   }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
@@ -298,17 +279,6 @@
   }
   .text-slate-900 {
     color: var(--color-slate-900);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .backdrop-filter {
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
   .sm\:text-lg {
     @media (width >= 40rem) {
@@ -413,7 +383,13 @@
 .main-content-space {
   margin-top: calc(var(--spacing) * 20);
   padding-inline: calc(var(--spacing) * 6);
+  @media (width >= 40rem) {
+    padding-inline: calc(var(--spacing) * 8);
+  }
   @media (width >= 48rem) {
+    padding-inline: calc(var(--spacing) * 16);
+  }
+  @media (width >= 64rem) {
     padding-inline: calc(var(--spacing) * 74.75);
   }
 }
@@ -619,6 +595,10 @@
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  gap: calc(var(--spacing) * 6);
+  @media (width >= 40rem) {
+    gap: calc(var(--spacing) * 0);
+  }
   @media (width >= 64rem) {
     grid-column: span 2 / span 2;
   }
@@ -638,6 +618,7 @@
 }
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   gap: calc(var(--spacing) * 4);
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -702,19 +683,13 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
+@property --tw-duration {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
 }
 @property --tw-backdrop-blur {
   syntax: "*";
@@ -752,9 +727,10 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-duration {
+@property --tw-border-style {
   syntax: "*";
   inherits: false;
+  initial-value: solid;
 }
 @property --tw-scale-x {
   syntax: "*";
@@ -776,9 +752,8 @@
     *, ::before, ::after, ::backdrop {
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
+      --tw-duration: initial;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
@@ -788,7 +763,7 @@
       --tw-backdrop-opacity: initial;
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
-      --tw-duration: initial;
+      --tw-border-style: solid;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
