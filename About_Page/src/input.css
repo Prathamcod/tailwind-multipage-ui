@@ -2,7 +2,7 @@
 
 /* Buttons */
 .btn {
-  @apply px-6 py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-md cursor-pointer font-semibold;
+  @apply px-6 py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-md cursor-pointer font-semibold hover:bg-slate-800;
 }
 
 .btn-muted {
