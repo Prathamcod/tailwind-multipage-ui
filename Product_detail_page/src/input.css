@@ -2,12 +2,9 @@
 
 /* Buttons */
 .btn {
-  @apply px-6 py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-md cursor-pointer font-semibold;
+  @apply inline-flex w-full justify-center rounded-md bg-black dark:bg-white px-6 py-3 text-base font-medium text-white dark:text-black transition-colors duration-200 hover:bg-gray-400 cursor-pointer;
 }
 
-.btn-muted {
-  @apply bg-gray-200 text-slate-900 dark:bg-slate-800 dark:text-slate-100 rounded-md transition-colors duration-150;
-}
 
 /* Navbar */
 .nav {
@@ -17,4 +14,9 @@
            text-black dark:text-white 
            sticky top-0 backdrop-blur-lg 
            transition-all duration-200;
+}
+
+/* product list */
+.product-heading {
+  @apply text-3xl sm:text-4xl md:text-5xl font-semibold text-center md:text-left;
 }
