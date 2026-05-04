@@ -1,25 +1,12 @@
 @import "tailwindcss";
 
-/* Global button hover effect */
-button {
-  transition:
-    transform 150ms var(--default-transition-timing-function),
-    box-shadow 150ms var(--default-transition-timing-function),
-    background-color 150ms var(--default-transition-timing-function);
-}
-
-button:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.08);
-}
-
 /* Buttons */
 .btn {
-  @apply px-6 py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-md cursor-pointer font-semibold;
+  @apply px-6 py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-md cursor-pointer font-semibold hover:bg-slate-400;
 }
 
 .btn-muted {
-  @apply bg-gray-200 text-slate-900 dark:bg-slate-800 dark:text-slate-100 rounded-md transition-colors duration-150;
+  @apply bg-gray-200 text-slate-900 dark:bg-slate-800 dark:text-slate-100 rounded-md transition-colors duration-150 hover:bg-slate-400;
 }
 
 /* Navbar */
@@ -83,7 +70,6 @@ button:hover {
 .cta-profile-align img {
   @apply w-12 h-12 md:w-14 md:h-14 rounded-full;
 }
-
 
 /* Footer */
 .footer {
